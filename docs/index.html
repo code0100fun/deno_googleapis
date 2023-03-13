@@ -1,0 +1,1604 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <meta charset="utf-8">
+            <title>Google APIs for Deno</title>
+        </head>
+        <body>
+            <h1>Google APIs for Deno</h1>
+            <p>
+            This service provides auto-generated Google API clients for Deno.
+            </p>
+            <h2>Example</h2>
+            <pre><code>// Import the client
+        import { ServiceAccount, Spanner } from "https://github.com/code0100fun/deno_googleapis/v1/spanner:v1.ts";
+
+        // Read the service account key.
+        const file = Deno.readTextFileSync("service-account.json");
+        const auth = ServiceAccount.fromJson(JSON.parse(file));
+
+        // Instantiate the client.
+        const spanner = new Spanner(auth);
+
+        // List Spanner instances.
+        const instances = await spanner.listInstances("projects/my-project");
+        console.log(instances);
+            </code></pre>
+            <h2>Services</h2>
+            <table>
+            <thead>
+                <tr>
+                <th>Service</th>
+                <th>Usage</th>
+                <th>Docs</th>
+                </tr>
+            </thead>
+            <tbody>
+        
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/abusiveexperiencereport.ts">Abusive Experience Report API</a></td>
+                    <td><pre>import { AbusiveExperienceReport } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/abusiveexperiencereport.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/abusiveexperiencereport.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/acceleratedmobilepageurl.ts">Accelerated Mobile Pages (AMP) URL API</a></td>
+                    <td><pre>import { AcceleratedMobilepageURL } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/acceleratedmobilepageurl.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/acceleratedmobilepageurl.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/accessapproval.ts">Access Approval API</a></td>
+                    <td><pre>import { AccessApproval } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/accessapproval.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/accessapproval.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/accesscontextmanager.ts">Access Context Manager API</a></td>
+                    <td><pre>import { AccessContextManager } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/accesscontextmanager.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/accesscontextmanager.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/acmedns.ts">ACME DNS API</a></td>
+                    <td><pre>import { ACMEDNS } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/acmedns.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/acmedns.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v2beta1/adexchangebuyer2.ts">Ad Exchange Buyer API II</a></td>
+                    <td><pre>import { AdExchangeBuyer2 } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v2beta1/adexchangebuyer2.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v2beta1/adexchangebuyer2.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/adexperiencereport.ts">Ad Experience Report API</a></td>
+                    <td><pre>import { AdExperienceReport } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/adexperiencereport.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/adexperiencereport.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/reports_v1/admin.ts">Admin SDK API</a></td>
+                    <td><pre>import { Admin } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/reports_v1/admin.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/reports_v1/admin.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/admob.ts">AdMob API</a></td>
+                    <td><pre>import { AdMob } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/admob.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/admob.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v2/adsense.ts">AdSense Management API</a></td>
+                    <td><pre>import { AdSense } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v2/adsense.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v2/adsense.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v4.1/adsensehost.ts">AdSense Host API</a></td>
+                    <td><pre>import { AdSenseHost } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v4.1/adsensehost.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v4.1/adsensehost.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/advisorynotifications.ts">Advisory Notifications API</a></td>
+                    <td><pre>import { AdvisoryNotifications } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/advisorynotifications.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/advisorynotifications.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1beta1/alertcenter.ts">Google Workspace Alert Center API</a></td>
+                    <td><pre>import { AlertCenter } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1beta1/alertcenter.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1beta1/alertcenter.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v3/analytics.ts">Google Analytics API</a></td>
+                    <td><pre>import { Analytics } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v3/analytics.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v3/analytics.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1beta/analyticsadmin.ts">Google Analytics Admin API</a></td>
+                    <td><pre>import { AnalyticsAdmin } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1beta/analyticsadmin.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1beta/analyticsadmin.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1beta/analyticsdata.ts">Google Analytics Data API</a></td>
+                    <td><pre>import { AnalyticsData } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1beta/analyticsdata.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1beta/analyticsdata.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/analyticshub.ts">Analytics Hub API</a></td>
+                    <td><pre>import { AnalyticsHub } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/analyticshub.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/analyticshub.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v4/analyticsreporting.ts">Analytics Reporting API</a></td>
+                    <td><pre>import { AnalyticsReporting } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v4/analyticsreporting.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v4/analyticsreporting.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/androiddeviceprovisioning.ts">Android Device Provisioning Partner API</a></td>
+                    <td><pre>import { AndroidDeviceProvisioning } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/androiddeviceprovisioning.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/androiddeviceprovisioning.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/androidenterprise.ts">Google Play EMM API</a></td>
+                    <td><pre>import { androidenterprise } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/androidenterprise.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/androidenterprise.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/androidmanagement.ts">Android Management API</a></td>
+                    <td><pre>import { AndroidManagement } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/androidmanagement.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/androidmanagement.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v3/androidpublisher.ts">Google Play Android Developer API</a></td>
+                    <td><pre>import { Androidpublisher } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v3/androidpublisher.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v3/androidpublisher.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/apigateway.ts">API Gateway API</a></td>
+                    <td><pre>import { APIGateway } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/apigateway.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/apigateway.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/apigee.ts">Apigee API</a></td>
+                    <td><pre>import { Apigee } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/apigee.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/apigee.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/apigeeregistry.ts">Apigee Registry API</a></td>
+                    <td><pre>import { ApigeeRegistry } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/apigeeregistry.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/apigeeregistry.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v2/apikeys.ts">API Keys API</a></td>
+                    <td><pre>import { APIKeys } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v2/apikeys.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v2/apikeys.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/appengine.ts">App Engine Admin API</a></td>
+                    <td><pre>import { AppEngine } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/appengine.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/appengine.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1alpha1/area120tables.ts">Area120 Tables API</a></td>
+                    <td><pre>import { Area120Tables } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1alpha1/area120tables.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1alpha1/area120tables.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/artifactregistry.ts">Artifact Registry API</a></td>
+                    <td><pre>import { ArtifactRegistry } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/artifactregistry.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/artifactregistry.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/assuredworkloads.ts">Assured Workloads API</a></td>
+                    <td><pre>import { AssuredWorkloads } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/assuredworkloads.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/assuredworkloads.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/authorizedbuyersmarketplace.ts">Authorized Buyers Marketplace API</a></td>
+                    <td><pre>import { AuthorizedBuyersMarketplace } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/authorizedbuyersmarketplace.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/authorizedbuyersmarketplace.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v2/baremetalsolution.ts">Bare Metal Solution API</a></td>
+                    <td><pre>import { BareMetalSolution } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v2/baremetalsolution.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v2/baremetalsolution.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/batch.ts">Batch API</a></td>
+                    <td><pre>import { Batch } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/batch.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/batch.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/beyondcorp.ts">BeyondCorp API</a></td>
+                    <td><pre>import { BeyondCorp } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/beyondcorp.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/beyondcorp.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v2/bigquery.ts">BigQuery API</a></td>
+                    <td><pre>import { BigQuery } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v2/bigquery.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v2/bigquery.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1beta1/bigqueryconnection.ts">BigQuery Connection API</a></td>
+                    <td><pre>import { BigQueryConnection } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1beta1/bigqueryconnection.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1beta1/bigqueryconnection.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/bigquerydatatransfer.ts">BigQuery Data Transfer API</a></td>
+                    <td><pre>import { BigQueryDataTransfer } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/bigquerydatatransfer.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/bigquerydatatransfer.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/bigqueryreservation.ts">BigQuery Reservation API</a></td>
+                    <td><pre>import { BigQueryReservation } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/bigqueryreservation.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/bigqueryreservation.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v2/bigtableadmin.ts">Cloud Bigtable Admin API</a></td>
+                    <td><pre>import { BigtableAdmin } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v2/bigtableadmin.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v2/bigtableadmin.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/billingbudgets.ts">Cloud Billing Budget API</a></td>
+                    <td><pre>import { BillingBudgets } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/billingbudgets.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/billingbudgets.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/binaryauthorization.ts">Binary Authorization API</a></td>
+                    <td><pre>import { BinaryAuthorization } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/binaryauthorization.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/binaryauthorization.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v3/blogger.ts">Blogger API</a></td>
+                    <td><pre>import { Blogger } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v3/blogger.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v3/blogger.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/books.ts">Books API</a></td>
+                    <td><pre>import { Books } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/books.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/books.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/businessprofileperformance.ts">Business Profile Performance API</a></td>
+                    <td><pre>import { BusinessProfilePerformance } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/businessprofileperformance.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/businessprofileperformance.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v3/calendar.ts">Google Calendar API</a></td>
+                    <td><pre>import { Calendar } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v3/calendar.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v3/calendar.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/certificatemanager.ts">Certificate Manager API</a></td>
+                    <td><pre>import { CertificateManager } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/certificatemanager.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/certificatemanager.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/chat.ts">Google Chat API</a></td>
+                    <td><pre>import { Chat } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/chat.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/chat.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/chromemanagement.ts">Chrome Management API</a></td>
+                    <td><pre>import { ChromeManagement } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/chromemanagement.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/chromemanagement.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/chromepolicy.ts">Chrome Policy API</a></td>
+                    <td><pre>import { ChromePolicy } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/chromepolicy.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/chromepolicy.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/chromeuxreport.ts">Chrome UX Report API</a></td>
+                    <td><pre>import { ChromeUXReport } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/chromeuxreport.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/chromeuxreport.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v2/civicinfo.ts">Google Civic Information API</a></td>
+                    <td><pre>import { Civicinfo } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v2/civicinfo.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v2/civicinfo.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/classroom.ts">Google Classroom API</a></td>
+                    <td><pre>import { Classroom } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/classroom.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/classroom.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/cloudasset.ts">Cloud Asset API</a></td>
+                    <td><pre>import { CloudAsset } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/cloudasset.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/cloudasset.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/cloudbilling.ts">Cloud Billing API</a></td>
+                    <td><pre>import { CloudBilling } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/cloudbilling.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/cloudbilling.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/cloudbuild.ts">Cloud Build API</a></td>
+                    <td><pre>import { CloudBuild } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/cloudbuild.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/cloudbuild.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/cloudchannel.ts">Cloud Channel API</a></td>
+                    <td><pre>import { CloudChannel } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/cloudchannel.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/cloudchannel.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v2/clouddebugger.ts">Cloud Debugger API</a></td>
+                    <td><pre>import { CloudDebugger } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v2/clouddebugger.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v2/clouddebugger.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/clouddeploy.ts">Google Cloud Deploy API</a></td>
+                    <td><pre>import { CloudDeploy } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/clouddeploy.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/clouddeploy.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1beta1/clouderrorreporting.ts">Error Reporting API</a></td>
+                    <td><pre>import { cloudErrorReporting } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1beta1/clouderrorreporting.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1beta1/clouderrorreporting.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v2/cloudfunctions.ts">Cloud Functions API</a></td>
+                    <td><pre>import { CloudFunctions } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v2/cloudfunctions.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v2/cloudfunctions.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/cloudidentity.ts">Cloud Identity API</a></td>
+                    <td><pre>import { CloudIdentity } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/cloudidentity.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/cloudidentity.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/cloudiot.ts">Cloud IoT API</a></td>
+                    <td><pre>import { CloudIoT } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/cloudiot.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/cloudiot.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/cloudkms.ts">Cloud Key Management Service (KMS) API</a></td>
+                    <td><pre>import { Cloudkms } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/cloudkms.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/cloudkms.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v2/cloudprofiler.ts">Cloud Profiler API</a></td>
+                    <td><pre>import { CloudProfiler } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v2/cloudprofiler.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v2/cloudprofiler.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v3/cloudresourcemanager.ts">Cloud Resource Manager API</a></td>
+                    <td><pre>import { CloudResourceManager } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v3/cloudresourcemanager.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v3/cloudresourcemanager.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/cloudscheduler.ts">Cloud Scheduler API</a></td>
+                    <td><pre>import { CloudScheduler } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/cloudscheduler.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/cloudscheduler.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/cloudsearch.ts">Cloud Search API</a></td>
+                    <td><pre>import { CloudSearch } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/cloudsearch.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/cloudsearch.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/cloudshell.ts">Cloud Shell API</a></td>
+                    <td><pre>import { CloudShell } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/cloudshell.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/cloudshell.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v2beta/cloudsupport.ts">Google Cloud Support API</a></td>
+                    <td><pre>import { CloudSupport } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v2beta/cloudsupport.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v2beta/cloudsupport.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v2/cloudtasks.ts">Cloud Tasks API</a></td>
+                    <td><pre>import { CloudTasks } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v2/cloudtasks.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v2/cloudtasks.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v2/cloudtrace.ts">Cloud Trace API</a></td>
+                    <td><pre>import { CloudTrace } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v2/cloudtrace.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v2/cloudtrace.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/composer.ts">Cloud Composer API</a></td>
+                    <td><pre>import { Composer } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/composer.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/composer.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/compute.ts">Compute Engine API</a></td>
+                    <td><pre>import { Compute } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/compute.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/compute.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v2/connectors.ts">Connectors API</a></td>
+                    <td><pre>import { Connectors } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v2/connectors.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v2/connectors.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1alpha1/contactcenteraiplatform.ts">Contact Center AI Platform API</a></td>
+                    <td><pre>import { ContactCenterAIPlatform } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1alpha1/contactcenteraiplatform.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1alpha1/contactcenteraiplatform.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/contactcenterinsights.ts">Contact Center AI Insights API</a></td>
+                    <td><pre>import { ContactCenterInsights } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/contactcenterinsights.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/contactcenterinsights.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/container.ts">Kubernetes Engine API</a></td>
+                    <td><pre>import { container } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/container.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/container.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/containeranalysis.ts">Container Analysis API</a></td>
+                    <td><pre>import { ContainerAnalysis } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/containeranalysis.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/containeranalysis.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v2.1/content.ts">Content API for Shopping</a></td>
+                    <td><pre>import { Content } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v2.1/content.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v2.1/content.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/contentwarehouse.ts">Document AI Warehouse API</a></td>
+                    <td><pre>import { contentWarehouse } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/contentwarehouse.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/contentwarehouse.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/customsearch.ts">Custom Search API</a></td>
+                    <td><pre>import { CustomSearch } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/customsearch.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/customsearch.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/datacatalog.ts">Google Cloud Data Catalog API</a></td>
+                    <td><pre>import { DataCatalog } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/datacatalog.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/datacatalog.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1b3/dataflow.ts">Dataflow API</a></td>
+                    <td><pre>import { Dataflow } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1b3/dataflow.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1b3/dataflow.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1beta1/dataform.ts">Dataform API</a></td>
+                    <td><pre>import { Dataform } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1beta1/dataform.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1beta1/dataform.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/datafusion.ts">Cloud Data Fusion API</a></td>
+                    <td><pre>import { DataFusion } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/datafusion.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/datafusion.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1beta1/datalabeling.ts">Data Labeling API</a></td>
+                    <td><pre>import { DataLabeling } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1beta1/datalabeling.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1beta1/datalabeling.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/datalineage.ts">Data Lineage API</a></td>
+                    <td><pre>import { DataLineage } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/datalineage.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/datalineage.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/datamigration.ts">Database Migration API</a></td>
+                    <td><pre>import { dataMigration } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/datamigration.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/datamigration.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/datapipelines.ts">Data pipelines API</a></td>
+                    <td><pre>import { Datapipelines } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/datapipelines.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/datapipelines.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/dataplex.ts">Cloud Dataplex API</a></td>
+                    <td><pre>import { Dataplex } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/dataplex.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/dataplex.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/dataproc.ts">Cloud Dataproc API</a></td>
+                    <td><pre>import { Dataproc } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/dataproc.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/dataproc.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/datastore.ts">Cloud Datastore API</a></td>
+                    <td><pre>import { Datastore } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/datastore.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/datastore.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/datastream.ts">Datastream API</a></td>
+                    <td><pre>import { Datastream } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/datastream.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/datastream.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v2/deploymentmanager.ts">Cloud Deployment Manager V2 API</a></td>
+                    <td><pre>import { DeploymentManager } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v2/deploymentmanager.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v2/deploymentmanager.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v4/dfareporting.ts">Campaign Manager 360 API</a></td>
+                    <td><pre>import { dfareporting } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v4/dfareporting.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v4/dfareporting.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v3/dialogflow.ts">Dialogflow API</a></td>
+                    <td><pre>import { Dialogflow } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v3/dialogflow.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v3/dialogflow.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/digitalassetlinks.ts">Digital Asset Links API</a></td>
+                    <td><pre>import { DigitalAssetLinks } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/digitalassetlinks.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/digitalassetlinks.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/discovery.ts">API Discovery Service</a></td>
+                    <td><pre>import { Discovery } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/discovery.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/discovery.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1beta/discoveryengine.ts">Discovery Engine API</a></td>
+                    <td><pre>import { DiscoveryEngine } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1beta/discoveryengine.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1beta/discoveryengine.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v2/displayvideo.ts">Display & Video 360 API</a></td>
+                    <td><pre>import { DisplayVideo } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v2/displayvideo.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v2/displayvideo.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v2/dlp.ts">Cloud Data Loss Prevention (DLP) API</a></td>
+                    <td><pre>import { dlp } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v2/dlp.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v2/dlp.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/dns.ts">Cloud DNS API</a></td>
+                    <td><pre>import { DNS } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/dns.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/dns.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/docs.ts">Google Docs API</a></td>
+                    <td><pre>import { Docs } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/docs.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/docs.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/documentai.ts">Cloud Document AI API</a></td>
+                    <td><pre>import { DocumentAI } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/documentai.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/documentai.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/domains.ts">Cloud Domains API</a></td>
+                    <td><pre>import { Domains } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/domains.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/domains.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/domainsrdap.ts">Domains RDAP API</a></td>
+                    <td><pre>import { DomainsRDAP } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/domainsrdap.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/domainsrdap.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v2/doubleclickbidmanager.ts">DoubleClick Bid Manager API</a></td>
+                    <td><pre>import { DoubleClickBidManager } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v2/doubleclickbidmanager.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v2/doubleclickbidmanager.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v2/doubleclicksearch.ts">Search Ads 360 API</a></td>
+                    <td><pre>import { doubleclickSearch } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v2/doubleclicksearch.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v2/doubleclicksearch.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v3/drive.ts">Drive API</a></td>
+                    <td><pre>import { Drive } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v3/drive.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v3/drive.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v2/driveactivity.ts">Drive Activity API</a></td>
+                    <td><pre>import { DriveActivity } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v2/driveactivity.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v2/driveactivity.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v2/drivelabels.ts">Drive Labels API</a></td>
+                    <td><pre>import { DriveLabels } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v2/drivelabels.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v2/drivelabels.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/essentialcontacts.ts">Essential Contacts API</a></td>
+                    <td><pre>import { EssentialContacts } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/essentialcontacts.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/essentialcontacts.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/eventarc.ts">Eventarc API</a></td>
+                    <td><pre>import { Eventarc } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/eventarc.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/eventarc.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1alpha1/factchecktools.ts">Fact Check Tools API</a></td>
+                    <td><pre>import { FactCheckTools } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1alpha1/factchecktools.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1alpha1/factchecktools.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/fcm.ts">Firebase Cloud Messaging API</a></td>
+                    <td><pre>import { fcm } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/fcm.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/fcm.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1beta1/fcmdata.ts">Firebase Cloud Messaging Data API</a></td>
+                    <td><pre>import { fcmData } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1beta1/fcmdata.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1beta1/fcmdata.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/file.ts">Cloud Filestore API</a></td>
+                    <td><pre>import { file } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/file.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/file.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1beta1/firebase.ts">Firebase Management API</a></td>
+                    <td><pre>import { Firebase } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1beta1/firebase.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1beta1/firebase.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/firebaseappcheck.ts">Firebase App Check API</a></td>
+                    <td><pre>import { FirebaseAppCheck } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/firebaseappcheck.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/firebaseappcheck.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1beta/firebasedatabase.ts">Firebase Realtime Database API</a></td>
+                    <td><pre>import { FirebaseDatabase } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1beta/firebasedatabase.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1beta/firebasedatabase.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/firebasedynamiclinks.ts">Firebase Dynamic Links API</a></td>
+                    <td><pre>import { FirebaseDynamicLinks } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/firebasedynamiclinks.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/firebasedynamiclinks.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/firebasehosting.ts">Firebase Hosting API</a></td>
+                    <td><pre>import { FirebaseHosting } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/firebasehosting.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/firebasehosting.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/firebaseml.ts">Firebase ML API</a></td>
+                    <td><pre>import { FirebaseML } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/firebaseml.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/firebaseml.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/firebaserules.ts">Firebase Rules API</a></td>
+                    <td><pre>import { FirebaseRules } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/firebaserules.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/firebaserules.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1beta/firebasestorage.ts">Cloud Storage for Firebase API</a></td>
+                    <td><pre>import { FirebaseStorage } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1beta/firebasestorage.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1beta/firebasestorage.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/firestore.ts">Cloud Firestore API</a></td>
+                    <td><pre>import { Firestore } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/firestore.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/firestore.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/fitness.ts">Fitness API</a></td>
+                    <td><pre>import { Fitness } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/fitness.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/fitness.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/forms.ts">Google Forms API</a></td>
+                    <td><pre>import { Forms } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/forms.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/forms.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/games.ts">Google Play Game Services</a></td>
+                    <td><pre>import { Games } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/games.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/games.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1configuration/gamesConfiguration.ts">Google Play Game Services Publishing API</a></td>
+                    <td><pre>import { GamesConfiguration } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1configuration/gamesConfiguration.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1configuration/gamesConfiguration.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1management/gamesManagement.ts">Google Play Game Management</a></td>
+                    <td><pre>import { GamesManagement } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1management/gamesManagement.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1management/gamesManagement.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/gameservices.ts">Game Services API</a></td>
+                    <td><pre>import { GameServices } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/gameservices.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/gameservices.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v2alpha1/genomics.ts">Genomics API</a></td>
+                    <td><pre>import { Genomics } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v2alpha1/genomics.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v2alpha1/genomics.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/gkebackup.ts">Backup for GKE API</a></td>
+                    <td><pre>import { GKEBackup } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/gkebackup.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/gkebackup.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/gkehub.ts">GKE Hub API</a></td>
+                    <td><pre>import { GKEHub } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/gkehub.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/gkehub.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/gmail.ts">Gmail API</a></td>
+                    <td><pre>import { Gmail } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/gmail.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/gmail.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/gmailpostmastertools.ts">Gmail Postmaster Tools API</a></td>
+                    <td><pre>import { GmailPostmasterTools } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/gmailpostmastertools.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/gmailpostmastertools.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/groupsmigration.ts">Groups Migration API</a></td>
+                    <td><pre>import { GroupsMigration } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/groupsmigration.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/groupsmigration.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/groupssettings.ts">Groups Settings API</a></td>
+                    <td><pre>import { GroupsSettings } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/groupssettings.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/groupssettings.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/healthcare.ts">Cloud Healthcare API</a></td>
+                    <td><pre>import { Healthcare } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/healthcare.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/healthcare.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/homegraph.ts">HomeGraph API</a></td>
+                    <td><pre>import { HomeGraph } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/homegraph.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/homegraph.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v2/iam.ts">Identity and Access Management (IAM) API</a></td>
+                    <td><pre>import { iam } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v2/iam.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v2/iam.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/iamcredentials.ts">IAM Service Account Credentials API</a></td>
+                    <td><pre>import { IAMCredentials } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/iamcredentials.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/iamcredentials.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/iap.ts">Cloud Identity-Aware Proxy API</a></td>
+                    <td><pre>import { iap } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/iap.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/iap.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v3/identitytoolkit.ts">Identity Toolkit API</a></td>
+                    <td><pre>import { IdentityToolkit } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v3/identitytoolkit.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v3/identitytoolkit.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/ids.ts">Cloud IDS API</a></td>
+                    <td><pre>import { IDS } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/ids.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/ids.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v3/indexing.ts">Indexing API</a></td>
+                    <td><pre>import { Indexing } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v3/indexing.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v3/indexing.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1alpha/integrations.ts">Application Integration API</a></td>
+                    <td><pre>import { Integrations } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1alpha/integrations.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1alpha/integrations.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v4/jobs.ts">Cloud Talent Solution API</a></td>
+                    <td><pre>import { jobs } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v4/jobs.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v4/jobs.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/keep.ts">Google Keep API</a></td>
+                    <td><pre>import { Keep } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/keep.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/keep.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/kgsearch.ts">Knowledge Graph Search API</a></td>
+                    <td><pre>import { kgSearch } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/kgsearch.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/kgsearch.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/kmsinventory.ts">KMS Inventory API</a></td>
+                    <td><pre>import { KMSInventory } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/kmsinventory.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/kmsinventory.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/language.ts">Cloud Natural Language API</a></td>
+                    <td><pre>import { Language } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/language.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/language.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/libraryagent.ts">Library Agent API</a></td>
+                    <td><pre>import { LibraryAgent } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/libraryagent.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/libraryagent.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/licensing.ts">Enterprise License Manager API</a></td>
+                    <td><pre>import { licensing } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/licensing.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/licensing.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v2beta/lifesciences.ts">Cloud Life Sciences API</a></td>
+                    <td><pre>import { LifeSciences } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v2beta/lifesciences.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v2beta/lifesciences.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/localservices.ts">Local Services API</a></td>
+                    <td><pre>import { LocalServices } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/localservices.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/localservices.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v2/logging.ts">Cloud Logging API</a></td>
+                    <td><pre>import { Logging } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v2/logging.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v2/logging.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/managedidentities.ts">Managed Service for Microsoft Active Directory API</a></td>
+                    <td><pre>import { Managedidentities } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/managedidentities.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/managedidentities.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/manufacturers.ts">Manufacturer Center API</a></td>
+                    <td><pre>import { Manufacturers } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/manufacturers.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/manufacturers.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/memcache.ts">Cloud Memorystore for Memcached API</a></td>
+                    <td><pre>import { memcache } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/memcache.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/memcache.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/metastore.ts">Dataproc Metastore API</a></td>
+                    <td><pre>import { Metastore } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/metastore.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/metastore.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1alpha1/migrationcenter.ts">Migration Center API</a></td>
+                    <td><pre>import { MigrationCenter } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1alpha1/migrationcenter.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1alpha1/migrationcenter.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/ml.ts">AI Platform Training & Prediction API</a></td>
+                    <td><pre>import { ml } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/ml.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/ml.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v3/monitoring.ts">Cloud Monitoring API</a></td>
+                    <td><pre>import { Monitoring } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v3/monitoring.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v3/monitoring.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/mybusinessaccountmanagement.ts">My Business Account Management API</a></td>
+                    <td><pre>import { MyBusinessAccountManagement } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/mybusinessaccountmanagement.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/mybusinessaccountmanagement.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/mybusinessbusinesscalls.ts">My Business Business Calls API</a></td>
+                    <td><pre>import { MyBusinessBusinessCalls } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/mybusinessbusinesscalls.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/mybusinessbusinesscalls.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/mybusinessbusinessinformation.ts">My Business Business Information API</a></td>
+                    <td><pre>import { MyBusinessBusinessInformation } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/mybusinessbusinessinformation.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/mybusinessbusinessinformation.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/mybusinesslodging.ts">My Business Lodging API</a></td>
+                    <td><pre>import { MyBusinessLodging } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/mybusinesslodging.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/mybusinesslodging.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/mybusinessnotifications.ts">My Business Notifications API</a></td>
+                    <td><pre>import { MyBusinessNotifications } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/mybusinessnotifications.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/mybusinessnotifications.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/mybusinessplaceactions.ts">My Business Place Actions API</a></td>
+                    <td><pre>import { MyBusinessPlaceActions } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/mybusinessplaceactions.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/mybusinessplaceactions.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/mybusinessqanda.ts">My Business Q&A API</a></td>
+                    <td><pre>import { MyBusinessqanda } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/mybusinessqanda.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/mybusinessqanda.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/mybusinessverifications.ts">My Business Verifications API</a></td>
+                    <td><pre>import { MyBusinessVerifications } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/mybusinessverifications.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/mybusinessverifications.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/networkconnectivity.ts">Network Connectivity API</a></td>
+                    <td><pre>import { NetworkConnectivity } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/networkconnectivity.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/networkconnectivity.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/networkmanagement.ts">Network Management API</a></td>
+                    <td><pre>import { NetworkManagement } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/networkmanagement.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/networkmanagement.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/networksecurity.ts">Network Security API</a></td>
+                    <td><pre>import { NetworkSecurity } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/networksecurity.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/networksecurity.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/networkservices.ts">Network Services API</a></td>
+                    <td><pre>import { NetworkServices } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/networkservices.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/networkservices.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v2/notebooks.ts">Notebooks API</a></td>
+                    <td><pre>import { Notebooks } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v2/notebooks.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v2/notebooks.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v2/oauth2.ts">Google OAuth2 API</a></td>
+                    <td><pre>import { OAuth2 } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v2/oauth2.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v2/oauth2.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/ondemandscanning.ts">On-Demand Scanning API</a></td>
+                    <td><pre>import { ondemandScanning } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/ondemandscanning.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/ondemandscanning.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v2/orgpolicy.ts">Organization Policy API</a></td>
+                    <td><pre>import { orgPolicy } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v2/orgpolicy.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v2/orgpolicy.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/osconfig.ts">OS Config API</a></td>
+                    <td><pre>import { OSConfig } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/osconfig.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/osconfig.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/oslogin.ts">Cloud OS Login API</a></td>
+                    <td><pre>import { OSLogin } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/oslogin.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/oslogin.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v5/pagespeedonline.ts">PageSpeed Insights API</a></td>
+                    <td><pre>import { PageSpeedonline } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v5/pagespeedonline.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v5/pagespeedonline.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/paymentsresellersubscription.ts">Payments Reseller Subscription API</a></td>
+                    <td><pre>import { PaymentsResellerSubscription } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/paymentsresellersubscription.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/paymentsresellersubscription.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/people.ts">People API</a></td>
+                    <td><pre>import { People } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/people.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/people.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/playcustomapp.ts">Google Play Custom App Publishing API</a></td>
+                    <td><pre>import { PlayCustomApp } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/playcustomapp.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/playcustomapp.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1beta1/playdeveloperreporting.ts">Google Play Developer Reporting API</a></td>
+                    <td><pre>import { PlayDeveloperReporting } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1beta1/playdeveloperreporting.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1beta1/playdeveloperreporting.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/playintegrity.ts">Google Play Integrity API</a></td>
+                    <td><pre>import { PlayIntegrity } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/playintegrity.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/playintegrity.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/policyanalyzer.ts">Policy Analyzer API</a></td>
+                    <td><pre>import { PolicyAnalyzer } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/policyanalyzer.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/policyanalyzer.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/policysimulator.ts">Policy Simulator API</a></td>
+                    <td><pre>import { PolicySimulator } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/policysimulator.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/policysimulator.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/policytroubleshooter.ts">Policy Troubleshooter API</a></td>
+                    <td><pre>import { PolicyTroubleshooter } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/policytroubleshooter.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/policytroubleshooter.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/poly.ts">Poly API</a></td>
+                    <td><pre>import { Poly } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/poly.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/poly.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/privateca.ts">Certificate Authority API</a></td>
+                    <td><pre>import { privateca } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/privateca.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/privateca.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1alpha1/prod_tt_sasportal.ts">SAS Portal API (Testing)</a></td>
+                    <td><pre>import { prod_tt_SASPortal } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1alpha1/prod_tt_sasportal.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1alpha1/prod_tt_sasportal.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1beta1/publicca.ts">Public Certificate Authority API</a></td>
+                    <td><pre>import { Publicca } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1beta1/publicca.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1beta1/publicca.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/pubsub.ts">Cloud Pub/Sub API</a></td>
+                    <td><pre>import { pubsub } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/pubsub.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/pubsub.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/pubsublite.ts">Pub/Sub Lite API</a></td>
+                    <td><pre>import { pubsubLite } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/pubsublite.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/pubsublite.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/readerrevenuesubscriptionlinking.ts">Reader Revenue Subscription Linking API</a></td>
+                    <td><pre>import { ReaderRevenueSubscriptionLinking } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/readerrevenuesubscriptionlinking.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/readerrevenuesubscriptionlinking.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/realtimebidding.ts">Real-time Bidding API</a></td>
+                    <td><pre>import { realtimeBidding } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/realtimebidding.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/realtimebidding.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/recaptchaenterprise.ts">reCAPTCHA Enterprise API</a></td>
+                    <td><pre>import { reCAPTCHAEnterprise } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/recaptchaenterprise.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/recaptchaenterprise.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1beta1/recommendationengine.ts">Recommendations AI (Beta)</a></td>
+                    <td><pre>import { recommendationengine } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1beta1/recommendationengine.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1beta1/recommendationengine.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/recommender.ts">Recommender API</a></td>
+                    <td><pre>import { Recommender } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/recommender.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/recommender.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/redis.ts">Google Cloud Memorystore for Redis API</a></td>
+                    <td><pre>import { Redis } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/redis.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/redis.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/reseller.ts">Google Workspace Reseller API</a></td>
+                    <td><pre>import { Reseller } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/reseller.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/reseller.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/resourcesettings.ts">Resource Settings API</a></td>
+                    <td><pre>import { ResourceSettings } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/resourcesettings.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/resourcesettings.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v2/retail.ts">Retail API</a></td>
+                    <td><pre>import { Retail } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v2/retail.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v2/retail.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v2/run.ts">Cloud Run Admin API</a></td>
+                    <td><pre>import { Run } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v2/run.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v2/run.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/runtimeconfig.ts">Cloud Runtime Configuration API</a></td>
+                    <td><pre>import { Runtimeconfig } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/runtimeconfig.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/runtimeconfig.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v4/safebrowsing.ts">Safe Browsing API</a></td>
+                    <td><pre>import { SafeBrowsing } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v4/safebrowsing.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v4/safebrowsing.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1alpha1/sasportal.ts">SAS Portal API</a></td>
+                    <td><pre>import { SASPortal } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1alpha1/sasportal.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1alpha1/sasportal.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/script.ts">Apps Script API</a></td>
+                    <td><pre>import { Script } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/script.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/script.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v0/searchads360.ts">Search Ads 360 Reporting API</a></td>
+                    <td><pre>import { SearchAds360 } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v0/searchads360.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v0/searchads360.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/searchconsole.ts">Google Search Console API</a></td>
+                    <td><pre>import { SearchConsole } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/searchconsole.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/searchconsole.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/secretmanager.ts">Secret Manager API</a></td>
+                    <td><pre>import { SecretManager } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/secretmanager.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/secretmanager.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/securitycenter.ts">Security Command Center API</a></td>
+                    <td><pre>import { SecurityCenter } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/securitycenter.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/securitycenter.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/serviceconsumermanagement.ts">Service Consumer Management API</a></td>
+                    <td><pre>import { ServiceConsumerManagement } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/serviceconsumermanagement.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/serviceconsumermanagement.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v2/servicecontrol.ts">Service Control API</a></td>
+                    <td><pre>import { ServiceControl } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v2/servicecontrol.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v2/servicecontrol.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/servicedirectory.ts">Service Directory API</a></td>
+                    <td><pre>import { ServiceDirectory } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/servicedirectory.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/servicedirectory.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/servicemanagement.ts">Service Management API</a></td>
+                    <td><pre>import { ServiceManagement } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/servicemanagement.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/servicemanagement.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/servicenetworking.ts">Service Networking API</a></td>
+                    <td><pre>import { ServiceNetworking } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/servicenetworking.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/servicenetworking.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/serviceusage.ts">Service Usage API</a></td>
+                    <td><pre>import { ServiceUsage } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/serviceusage.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/serviceusage.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v4/sheets.ts">Google Sheets API</a></td>
+                    <td><pre>import { Sheets } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v4/sheets.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v4/sheets.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/siteVerification.ts">Site Verification API</a></td>
+                    <td><pre>import { SiteVerification } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/siteVerification.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/siteVerification.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/slides.ts">Google Slides API</a></td>
+                    <td><pre>import { Slides } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/slides.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/slides.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/smartdevicemanagement.ts">Smart Device Management API</a></td>
+                    <td><pre>import { SmartDeviceManagement } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/smartdevicemanagement.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/smartdevicemanagement.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/sourcerepo.ts">Cloud Source Repositories API</a></td>
+                    <td><pre>import { Sourcerepo } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/sourcerepo.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/sourcerepo.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/spanner.ts">Cloud Spanner API</a></td>
+                    <td><pre>import { Spanner } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/spanner.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/spanner.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/speech.ts">Cloud Speech-to-Text API</a></td>
+                    <td><pre>import { speech } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/speech.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/speech.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/sqladmin.ts">sqladmin API (prod)</a></td>
+                    <td><pre>import { sqladmin } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/sqladmin.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/sqladmin.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/storage.ts">Cloud Storage API</a></td>
+                    <td><pre>import { Storage } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/storage.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/storage.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/storagetransfer.ts">Storage Transfer API</a></td>
+                    <td><pre>import { StorageTransfer } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/storagetransfer.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/storagetransfer.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/streetviewpublish.ts">Street View Publish API</a></td>
+                    <td><pre>import { StreetViewPublish } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/streetviewpublish.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/streetviewpublish.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/sts.ts">Security Token Service API</a></td>
+                    <td><pre>import { sts } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/sts.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/sts.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v2/tagmanager.ts">Tag Manager API</a></td>
+                    <td><pre>import { TagManager } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v2/tagmanager.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v2/tagmanager.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/tasks.ts">Tasks API</a></td>
+                    <td><pre>import { Tasks } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/tasks.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/tasks.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/testing.ts">Cloud Testing API</a></td>
+                    <td><pre>import { Testing } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/testing.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/testing.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/texttospeech.ts">Cloud Text-to-Speech API</a></td>
+                    <td><pre>import { texttospeech } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/texttospeech.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/texttospeech.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1beta3/toolresults.ts">Cloud Tool Results API</a></td>
+                    <td><pre>import { ToolResults } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1beta3/toolresults.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1beta3/toolresults.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v2/tpu.ts">Cloud TPU API</a></td>
+                    <td><pre>import { TPU } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v2/tpu.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v2/tpu.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v2/trafficdirector.ts">Traffic Director API</a></td>
+                    <td><pre>import { TrafficDirector } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v2/trafficdirector.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v2/trafficdirector.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/transcoder.ts">Transcoder API</a></td>
+                    <td><pre>import { Transcoder } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/transcoder.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/transcoder.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v3/translate.ts">Cloud Translation API</a></td>
+                    <td><pre>import { translate } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v3/translate.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v3/translate.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/travelimpactmodel.ts">Travel Impact Model API</a></td>
+                    <td><pre>import { TravelImpactModel } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/travelimpactmodel.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/travelimpactmodel.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/vault.ts">Google Vault API</a></td>
+                    <td><pre>import { Vault } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/vault.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/vault.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v2/verifiedaccess.ts">Chrome Verified Access API</a></td>
+                    <td><pre>import { VerifiedAccess } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v2/verifiedaccess.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v2/verifiedaccess.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/versionhistory.ts">versionhistory.googleapis.com API</a></td>
+                    <td><pre>import { versionhistory } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/versionhistory.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/versionhistory.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/videointelligence.ts">Cloud Video Intelligence API</a></td>
+                    <td><pre>import { VideoIntelligence } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/videointelligence.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/videointelligence.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/vision.ts">Cloud Vision API</a></td>
+                    <td><pre>import { Vision } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/vision.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/vision.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/vmmigration.ts">VM Migration API</a></td>
+                    <td><pre>import { VMMigration } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/vmmigration.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/vmmigration.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/vpcaccess.ts">Serverless VPC Access API</a></td>
+                    <td><pre>import { VPCAccess } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/vpcaccess.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/vpcaccess.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/webfonts.ts">Web Fonts Developer API</a></td>
+                    <td><pre>import { WebFonts } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/webfonts.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/webfonts.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/webrisk.ts">Web Risk API</a></td>
+                    <td><pre>import { WebRisk } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/webrisk.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/webrisk.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/websecurityscanner.ts">Web Security Scanner API</a></td>
+                    <td><pre>import { WebSecurityScanner } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/websecurityscanner.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/websecurityscanner.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/workflowexecutions.ts">Workflow Executions API</a></td>
+                    <td><pre>import { WorkflowExecutions } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/workflowexecutions.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/workflowexecutions.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/workflows.ts">Workflows API</a></td>
+                    <td><pre>import { Workflows } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/workflows.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/workflows.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/workloadmanager.ts">Workload Manager API</a></td>
+                    <td><pre>import { WorkloadManager } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/workloadmanager.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/workloadmanager.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1beta/workstations.ts">Cloud Workstations API</a></td>
+                    <td><pre>import { Workstations } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1beta/workstations.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1beta/workstations.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v3/youtube.ts">YouTube Data API v3</a></td>
+                    <td><pre>import { YouTube } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v3/youtube.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v3/youtube.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v2/youtubeAnalytics.ts">YouTube Analytics API</a></td>
+                    <td><pre>import { YouTubeAnalytics } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v2/youtubeAnalytics.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v2/youtubeAnalytics.ts">Docs</a></td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/youtubereporting.ts">YouTube Reporting API</a></td>
+                    <td><pre>import { YouTubeReporting } from "https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/youtubereporting.ts";</pre></td>
+                    <td><a href="https://doc.deno.land/https://github.com/code0100fun/deno_googleapis/raw/latest/build/v1/youtubereporting.ts">Docs</a></td>
+                    </tr>
+        </body>
+    </html>
