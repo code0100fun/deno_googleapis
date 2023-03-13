@@ -227,7 +227,7 @@ function encodeBase64(uint8: Uint8Array): string {
     this.#w.blankLine();
 
     const imports =
-      `import { auth, CredentialsClient, GoogleAuth, request } from "/_/base@v1/mod.ts";
+      `import { auth, CredentialsClient, GoogleAuth, request } from "../../base/mod.ts";
 export { auth, GoogleAuth };
 export type { CredentialsClient };`;
     this.#w.writeLine(imports);

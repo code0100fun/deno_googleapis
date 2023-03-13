@@ -1,2 +1,2 @@
-dev:
-	deno run --watch --allow-read=. --allow-net --allow-env --allow-hrtime server/main.ts
+compile:
+	deno run --allow-read=. --allow-write=. --allow-net --allow-env --allow-hrtime src/main.ts
