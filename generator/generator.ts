@@ -202,7 +202,7 @@ function encodeBase64(uint8: Uint8Array): string {
       this.#w.writeLine(" *");
       for (const param of params) {
         if (param.description) {
-          this.#w.writeLine(` * @param ${param.name} ${param.description}`);
+          this.#w.writeLine(` * @param ${param.name} ${this.#escapeDocs(param.description)}`);
         }
       }
     }
